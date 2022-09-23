@@ -39,3 +39,9 @@ tasks.withType<KotlinCompile> {
 		jvmTarget = "1.8"
 	}
 }
+
+tasks.withType<Jar> {
+    manifest {
+        attributes("Main-Class" to "DemoApplication")
+    }
+}
